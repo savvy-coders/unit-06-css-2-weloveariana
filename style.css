@@ -1,0 +1,83 @@
+.box {
+  box-sizing: content-box;
+  width: 400px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: lightblue;
+  margin-bottom: 20px;
+}
+
+.box-with-margin {
+  margin: 30px;
+}
+
+.static-element {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.relative-element {
+  position: relative;
+  top: 20px;
+  left: 80px;
+  margin-bottom: 20px;
+}
+
+.absolute-element {
+  position: relative;
+  top: 150px;
+  left: 200px;
+  margin-bottom: 20px;
+}
+
+.fixed-element {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin-bottom: 20px;
+}
+
+.column {
+  float: right;
+  width: 50%;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+}
+
+.container {
+  display: inline-flex;
+}
+
+.item {
+  flex: 1;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.grid-container .header {
+  grid-area: header;
+}
+
+.grid-container .sidebar {
+  grid-area: sidebar;
+}
+
+.grid-container .main {
+  grid-area: main;
+}
+
+.grid-container .footer {
+  grid-area: footer;
+}
+
+.grid-container .grid-item {
+  background-color: #ccc;
+  padding: 20px;
+}
