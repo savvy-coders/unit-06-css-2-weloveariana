@@ -1,83 +1,65 @@
 .box {
-  box-sizing: content-box;
   width: 400px;
-  padding: 10px 0; /* changed to apply padding only to the top and bottom */
-  border: 1px solid #ccc;
-  background-color: lightblue; /* changed the background color to light blue */
-  margin-bottom: 20px;
+  padding: 10px 0;
+  box-sizing: content-box;
+  background-color: lightblue;
 }
 
 .box-with-margin {
-  margin: 30px;
+  margin: 30px; 
 }
 
 .static-element {
-  position: relative; /* changed the position to relative */
-  margin-bottom: 20px;
+  position: relative;
 }
 
 .relative-element {
   position: relative;
-  top: 20px;
-  left: 50px; /* moved the element 50px to the right */
-  margin-bottom: 20px;
+  left: 80px; 
 }
 
 .absolute-element {
-  position: relative; /* changed the position to relative */
-  top: 150px; /* set the top property to 150px */
-  left: 200px;
-  margin-bottom: 20px;
+  position: relative;
+  top: 150px;
 }
 
 .fixed-element {
   position: fixed;
-  bottom: 0; /* fixed to the bottom of the viewport */
-  right: 0; /* fixed to the right of the viewport */
-  margin-bottom: 20px;
+  bottom: 20px;
+  right: 20px;  
 }
 
 .column {
-  float: right; /* changed the float property to right */
-  width: 50%;
-  margin-bottom: 20px;
-  border: 1px solid lightgray; /* added a 1px solid light gray border */
+  float: right;
 }
 
 .container {
-  display: inline-flex; /* changed the display property to inline-flex */
+  display: inline-flex;
 }
 
 .item {
-  flex: 1;
-  width: 200px; /* adjusted the width to 200px */
-  margin-right: 20px; /* added a 20px margin to the right */
+  width: 200px;
+  margin-right: 20px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* created a grid layout with 4 columns */
-  grid-template-rows: repeat(3, 100px); /* and 3 rows */
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px); 
 }
 
 .grid-container .header {
-  grid-area: header; /* assigned the .header class to the header grid area */
+  grid-area: header;
 }
 
 .grid-container .sidebar {
-  grid-area: sidebar; /* assigned the .sidebar class to the sidebar grid area */
+  grid-area: sidebar;
 }
 
 .grid-container .main {
-  grid-area: main; /* assigned the .main class to the main grid area */
+  grid-area: main;
 }
 
 .grid-container .footer {
-  grid-area: footer; /* assigned the .footer class to the footer grid area */
-}
-
-.grid-container .grid-item {
-  background-color: #ccc;
-  padding: 20px;
+  grid-area: footer;
 }
