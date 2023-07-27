@@ -1,83 +1,55 @@
 .box {
-  box-sizing: content-box;
-  width: 400px;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  background-color: lightblue;
-  margin-bottom: 20px;
+  width: 200px;
+  background-color: yellow;
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 20px;
+  /* Add this line */
 }
 
+
 .box-with-margin {
-  margin: 30px;
+  margin: 10px;
 }
 
 .static-element {
-  position: relative;
-  margin-bottom: 20px;
+  position: static;
 }
 
 .relative-element {
   position: relative;
-  top: 20px;
-  left: 80px;
-  margin-bottom: 20px;
+  left: 0px;
 }
 
 .absolute-element {
-  position: relative;
-  top: 150px;
-  left: 200px;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 0px;
 }
 
 .fixed-element {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  margin-bottom: 20px;
+  position: static;
 }
 
 .column {
-  float: right;
-  width: 50%;
-  margin-bottom: 20px;
-  border: 1px solid lightgray;
+  float: left;
 }
 
 .container {
-  display: inline-flex;
+  display: block;
 }
 
 .item {
-  flex: 1;
-  width: 200px;
-  margin-right: 20px;
+  width: 100px;
+  margin-right: 0px;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 100px);
-  grid-gap: 10px;
+  display: block;
 }
 
-.grid-container .header {
-  grid-area: header;
-}
-
-.grid-container .sidebar {
-  grid-area: sidebar;
-}
-
-.grid-container .main {
-  grid-area: main;
-}
-
-.grid-container .footer {
-  grid-area: footer;
-}
-
-.grid-container .grid-item {
-  background-color: #ccc;
-  padding: 20px;
+.header,
+.sidebar,
+.main,
+.footer {
+  grid-area: unset;
 }
