@@ -60,7 +60,7 @@ describe('CSS Challenge', () => {
       .should('have.css', 'grid-template-columns', '223.891px 223.891px 223.891px 223.891px 0px 88.4375px')
       .and('have.css', 'grid-template-rows', '100px 100px 100px 0px 18.3333px')
   })
-
+  
   it('positions elements in grid areas', () => {
     cy.get('.header').should('have.css','grid-area',  'header / header / header / header')
     cy.get('.sidebar').should('have.css','grid-area', 'sidebar / sidebar / sidebar / sidebar')
