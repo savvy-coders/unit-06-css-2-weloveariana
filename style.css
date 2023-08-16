@@ -1,55 +1,65 @@
 .box {
-  width: 200px;
-  background-color: yellow;
-  padding: 0px;
-  box-sizing: border-box;
-  margin: 20px;
-  /* Add this line */
+  width: 400px;
+  padding: 10px 0;
+  box-sizing: content-box;
+  background-color: lightblue;
 }
 
-
 .box-with-margin {
-  margin: 10px;
+  margin: 30px; 
 }
 
 .static-element {
-  position: static;
+  position: relative;
 }
 
 .relative-element {
   position: relative;
-  left: 0px;
+  left: 80px; 
 }
 
 .absolute-element {
-  position: absolute;
-  top: 0px;
+  position: relative;
+  top: 150px;
 }
 
 .fixed-element {
-  position: static;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;  
 }
 
 .column {
-  float: left;
+  float: right;
 }
 
 .container {
-  display: block;
+  display: inline-flex;
 }
 
 .item {
-  width: 100px;
-  margin-right: 0px;
+  width: 200px;
+  margin-right: 20px;
 }
 
 .grid-container {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px); 
 }
 
-.header,
-.sidebar,
-.main,
-.footer {
-  grid-area: unset;
+.grid-container .header {
+  grid-area: header;
+}
+
+.grid-container .sidebar {
+  grid-area: sidebar;
+}
+
+.grid-container .main {
+  grid-area: main;
+}
+
+.grid-container .footer {
+  grid-area: footer;
 }
