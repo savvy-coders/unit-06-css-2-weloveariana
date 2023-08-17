@@ -1,7 +1,8 @@
-**Round 2! FIGHT!**
+# Round 2! FIGHT
 
 Let's go! Time to get hairy with some css - we're digging into Grid and Flexbox now! Whoot!
-You've got a simple HTML file and simple CSS file - let's make them better! Follow the 
+
+You've got a simple HTML file and an empty CSS file - let's make them better! Follow the
 instructions below - don't forget to consult the curriculum if you're unsure on something!
 
 Instructions:
